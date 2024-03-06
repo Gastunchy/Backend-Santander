@@ -12,7 +12,7 @@ const app = express()
 // Configurar middleware de CORS para permitir solo la dirección web especificada
 const corsOptions = {
     origin: (origin, callback) => {
-        if (origin === "http://front.34.73.198.248.nip.io") {
+        if (origin === "http://localhost:81") {
             callback(null, true);
         } else {
             callback(new Error("Acceso prohibido"));
